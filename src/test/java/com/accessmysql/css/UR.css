@@ -1,0 +1,88 @@
+.rg_layout {
+    border: #a4cdcb 10px solid;
+    width: 700px;
+    height: 600px;
+    background: #d6e5e4;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.rg_left {
+    float: left;
+}
+
+.rg_center {
+    float: left;
+}
+
+.rg_right {
+    float: right;
+}
+
+.rg_right p:first-child{
+    color:#a6a6a6;
+    font-size: 12px;
+}
+
+.rg_right p a {
+    color: pink;
+    text-decoration: none;
+}
+
+.text_en {
+    color: burlywood;
+    font-weight: bold;
+    font-family: bold;
+    font-size: 16px;
+}
+
+.text_zh {
+    color: darkorange;
+    font-size: 20px;
+}
+
+.td_left {
+    width: 100px;
+    text-align: right;
+    height: 40px;
+}
+
+.td_right {
+    width: 300px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#email,#yzm,#username,#password,#birthday,#comes,#name,#phone {
+    width: 250px;
+    height: 28px;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#comes {
+    width: 100px;
+}
+
+#yzm {
+    width: 130px;
+}
+
+#yzm_tp {
+    vertical-align: middle;
+    height: 28px;
+}
+
+#zc {
+    width: 120px;
+    height: 28px;
+    background-color: chocolate;
+    border-radius: 5px;
+    border: 1px solid #ffcc00;
+}
+
+body {
+    background: url("../images/templatemo_body.jpg");
+}
