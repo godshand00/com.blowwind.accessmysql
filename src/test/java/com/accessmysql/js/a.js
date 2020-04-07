@@ -24,3 +24,62 @@
 变量
 
 */
+var flag2 = false;
+var xin = document.getElementById("Xin");
+xin.onclick = fun1;
+function fun1() {
+    if (flag2) {
+        xin.innerText = "新用户注册";
+        flag2 = false;
+    } else {
+        xin.innerText = "你点了这里一下！";
+        flag2 = true;
+    }
+}
+
+var flag1 = false;
+var yzm_tp = document.getElementById("yzm_tp");
+
+yzm_tp.onclick = fun;
+
+function fun() {
+    if (flag1) {
+        yzm_tp.src = "images/loading.gif";
+        flag1 = false;
+    } else {
+        yzm_tp.src = "images/closelabel.gif";
+        flag1 = true;
+    }
+}
+
+var OpenBtn = document.getElementById("OpenBtn");
+OpenBtn.onclick = fun3;
+
+var NewWindow;
+
+function fun3() {
+    NewWindow = open("http://www.baidu.com");
+}
+
+var CloseBtn = document.getElementById("CloseBtn");
+CloseBtn.onclick = fun4;
+
+function fun4() {
+    NewWindow.close();
+}
+
+var number = 1;
+function fun5() {
+    number++;
+    if (number < 10) {
+        number = "0" + number;
+    }
+
+    if (number == 16) {
+        number = 1;
+    }
+    var image = document.getElementById("image");
+    image.src = "images/gallery/" + number + ".jpg";
+}
+
+setInterval(fun5, 3000);

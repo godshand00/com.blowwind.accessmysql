@@ -8,8 +8,11 @@
 <body>
 <div class="rg_layout">
     <div class="rg_left">
-        <p class="text_zh">新用户注册</p>
-        <p class="text_en">USER REGISTER</p>
+        <p class="text_zh" id="Xin">新用户注册</p>
+        <p class="text_en" id="UserRegister">USER REGISTER</p>
+        <p><input class="zc" id="OpenBtn" type="button" value="新建窗口"></p>
+        <p><input class="zc" id="CloseBtn" type="button" value="关闭窗口"></p>
+        <img id= "image" src="images/gallery/01.jpg" width="80%">
     </div>
     <div class="rg_center">
 <form>
@@ -19,7 +22,7 @@
     <tr><td class="td_left"><label>Email</label></td><td class="td_right"><input name="email" id="email" placeholder="请在这里输入Email"></td></tr>
     <tr><td class="td_left"><label>姓名</label></td><td class="td_right"><input name="name" id="name" placeholder="请在这里输入姓名"></td></tr>
     <tr><td class="td_left"><label>手机号</label></td><td class="td_right"><input name="phone" id="phone" placeholder="请在这里输入手机号"></td></tr>
-    <tr><td class="td_left"><label>性别</label></td><td class="td_right"><input name="sex" id="sex" type="radio" value="男" checked>男<input name="sex" id="sex" type="radio" value="女">女</td></tr>
+    <tr><td class="td_left"><label>性别</label></td><td class="td_right"><input name="sex" type="radio" value="男" checked>男<input name="sex" type="radio" value="女">女</td></tr>
     <tr><td class="td_left"><label>出生年月</label></td><td class="td_right"><input name="birthday" id="birthday" type="date"></td></tr>
     <tr><td class="td_left"><label>来自哪里</label></td><td class="td_right">
         <select name="comes" id="comes">
@@ -29,11 +32,11 @@
     </td></tr>
     <tr><td class="td_left"><label>验证码</label></td>
         <td class="td_right">
-            <input name="yzm" id="yzm" placeholder="请在这里右侧验证码">
+            <input name="yzm" id="yzm" placeholder="请输入右侧验证码">
             <img id="yzm_tp" src="images/loading.gif">
         </td>
     </tr>
-    <tr><td colspan="2" align="center"><input type="submit" value="注册" id="zc"></td></tr>
+    <tr><td colspan="2" align="center"><input class="zc" type="submit" value="注册" id="zc"></td></tr>
 </table>
 </form>
     </div>
@@ -43,4 +46,9 @@
 </div>
 </body>
 <script src="js/a.js"></script>
+<script>
+
+
+
+</script>
 </html>
