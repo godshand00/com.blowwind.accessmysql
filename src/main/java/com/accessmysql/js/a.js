@@ -108,4 +108,51 @@ function fun8() {
     location.href = "http://www.163.com";
 }
 
+var SetBtn = document.getElementById("SetBtn");
+SetBtn.onclick = fun9;
+
+function fun9() {
+    var aa = document.getElementById("UserRegister");
+    aa.setAttribute("href","AutoJump.html")
+}
+
+var AddBtn = document.getElementById("AddBtn");
+AddBtn.onclick = fun10;
+
+function fun10() {
+    alert("我是有动作的");
+    var id1 = document.getElementById("id1").value;
+    var name1 = document.getElementById("name1").value;
+    var sex1 = document.getElementById("sex1").value;
+
+    var td_id1 = document.createElement("td");
+    var text_id1 = document.createTextNode(id1);
+    td_id1.appendChild(text_id1);
+
+    var td_name1 = document.createElement("td");
+    var text_name1 = document.createTextNode(name1);
+    td_name1.appendChild(text_name1);
+
+    var td_sex1 = document.createElement("td");
+    var text_sex1 = document.createTextNode(sex1);
+    td_sex1.appendChild(text_sex1);
+
+    var td_cz1 = document.createElement("td");
+    var DelBtn = document.createElement("input");
+    DelBtn.setAttribute("class","zc");
+    DelBtn.setAttribute("type","button");
+    DelBtn.setAttribute("value","删除本行");
+    td_cz1.appendChild(DelBtn);
+
+    var tr1 = document.createElement("tr");
+    tr1.appendChild(td_id1);
+    tr1.appendChild(td_name1);
+    tr1.appendChild(td_sex1);
+    tr1.appendChild(td_cz1);
+
+    var table1 = document.getElementsByTagName("table")[1];
+    table1.appendChild(tr1);
+
+}
+
 setInterval(fun5, 2000);

@@ -9,12 +9,13 @@
 <div class="rg_layout">
     <div class="rg_left">
         <p class="text_zh" id="Xin">新用户注册</p>
-        <p class="text_en" id="UserRegister">USER REGISTER</p>
+        <a class="text_en" id="UserRegister">USER REGISTER</a>
         <p><input class="zc" id="OpenBtn" type="button" value="新建窗口"></p>
         <p><input class="zc" id="CloseBtn" type="button" value="关闭窗口"></p>
         <p><input class="zc" id="HistoryBtn" type="button" value="显示HISTORY"></p>
         <p><input class="zc" id="refurbishBtn" type="button" value="刷新本页"></p>
         <p><input class="zc" id="w163Btn" type="button" value="打开163"></p>
+        <p><input class="zc" id="SetBtn" type="button" value="把文字超链接"></p>
 
         <img id= "image" src="images/gallery/01.jpg" width="120px">
     </div>
@@ -22,7 +23,7 @@
 <form>
 <table>
     <tr><td class="td_left"><label>用户名</label></td><td class="td_right"><input name="username" id="username" placeholder="请在这里输入用户名"></td></tr>
-    <tr><td class="td_left"><label>密码</label></td><td class="td_right"><input name="password" id="password" placeholder="请在这里输入密码" type="password"></td></tr>
+    <tr><td class="td_left"><label>密码</label></td><td class="td_right"><input name="password" id="password" placeholder="请在这里输入密码" type="password" autocomplete="off"></td></tr>
     <tr><td class="td_left"><label>Email</label></td><td class="td_right"><input name="email" id="email" placeholder="请在这里输入Email"></td></tr>
     <tr><td class="td_left"><label>姓名</label></td><td class="td_right"><input name="name" id="name" placeholder="请在这里输入姓名"></td></tr>
     <tr><td class="td_left"><label>手机号</label></td><td class="td_right"><input name="phone" id="phone" placeholder="请在这里输入手机号"></td></tr>
@@ -45,8 +46,21 @@
 </form>
     </div>
     <div class="rg_right">
-        <p>已有账号？<a href="#">立即登录</a></p>
+        <p>已有账号？<a href="AutoJump.html">立即登录</a></p>
     </div>
+</div>
+<div>
+    <input type="text" id="id1" placeholder="请输入编号">
+    <input type="text" id="name1" placeholder="请输入姓名">
+    <select type="text" id="sex1">
+        <option>男</option><option>女</option>
+    </select>
+    <input class="zc" type="button" id="AddBtn" value="添加信息">
+</div>
+<div>
+    <table border="1px solid">
+        <tr><bold><th width="120">编号</th><th width="240">姓名</th><th width="120">性别</th><th width="240">操作</th></bold></tr>
+    </table>
 </div>
 </body>
 <script src="js/a.js"></script>
