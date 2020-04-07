@@ -1,10 +1,8 @@
-package com.accessmysql.accessmysql;/*
+package com.accessmysql;/*
 @author     Leon.King
 @Date       2020/4/3
   
 */
-
-import ch.qos.logback.core.joran.conditional.ElseAction;
 
 import java.util.Scanner;
 

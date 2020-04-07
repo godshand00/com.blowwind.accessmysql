@@ -76,10 +76,36 @@ function fun5() {
     }
 
     if (number == 16) {
-        number = 1;
+        number = "01";
     }
     var image = document.getElementById("image");
     image.src = "images/gallery/" + number + ".jpg";
 }
 
-setInterval(fun5, 3000);
+var HistoryBtn = document.getElementById("HistoryBtn");
+HistoryBtn.onclick = fun6;
+
+function fun6() {
+    var h1 = window.history;
+    var h2 = history;
+    alert(h1);
+    alert(h2);
+}
+
+var refurbishBtn = document.getElementById("refurbishBtn");
+refurbishBtn.onclick = fun7;
+
+function fun7() {
+     location.reload();
+}
+
+var w163Btn = document.getElementById("w163Btn");
+w163Btn.onclick = fun8;
+
+function fun8() {
+    var a = location.href;
+    alert(a);
+    location.href = "http://www.163.com";
+}
+
+setInterval(fun5, 2000);

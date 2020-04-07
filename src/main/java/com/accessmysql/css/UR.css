@@ -1,6 +1,7 @@
 .rg_layout {
     border: #a4cdcb 10px solid;
-    width: 700px;
+    border-radius: 10px;
+    width: 800px;
     height: 600px;
     background: #d6e5e4;
     margin: auto;
@@ -9,11 +10,12 @@
 }
 
 .rg_left {
+    border: #d6e5e4 10px solid;
     float: left;
 }
 
 .rg_center {
-    float: left;
+    float: snap;
 }
 
 .rg_right {
@@ -50,13 +52,13 @@
 }
 
 .td_right {
-    width: 300px;
+    width: 250px;
     text-align: left;
     padding-left: 50px;
 }
 
 #email,#yzm,#username,#password,#birthday,#comes,#name,#phone {
-    width: 200px;
+    width: 180px;
     height: 28px;
     border: 1px solid #a6a6a6;
     border-radius: 5px;

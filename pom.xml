@@ -8,10 +8,10 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.accessmysql</groupId>
+    <groupId>Blowwind</groupId>
     <artifactId>accessmysql</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>accessmysql</name>
+    <name>com.accessmysql</name>
     <description>My first sample for access of mysql</description>
 
     <properties>
@@ -49,6 +49,10 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
         </dependency>
     </dependencies>
 

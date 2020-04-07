@@ -1,4 +1,4 @@
-package com.accessmysql.accessmysql;
+package com.accessmysql;
 
 public class Student {
     String name;

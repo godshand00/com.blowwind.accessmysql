@@ -1,4 +1,4 @@
-package com.accessmysql.accessmysql;/*
+package com.accessmysql;/*
 @author     Leon.King
 @Date       2020/4/5
   

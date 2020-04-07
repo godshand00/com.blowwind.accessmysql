@@ -1,8 +1,6 @@
-package com.accessmysql.accessmysql;
+package com.accessmysql;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /*
 @author     Leon.King

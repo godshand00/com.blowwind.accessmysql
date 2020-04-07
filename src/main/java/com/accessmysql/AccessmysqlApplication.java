@@ -1,6 +1,5 @@
-package com.accessmysql.accessmysql;
+package com.accessmysql;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
